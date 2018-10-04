@@ -19,7 +19,7 @@ public class Account {
     }
 
     public double getBalance(){
-        return this.balance;
+        return balance;
     }
 
     public void setAnnualInterestRate(double annualInterestRate) {
@@ -39,17 +39,15 @@ public class Account {
     }
 
     public double getMonthlyInterestRate(){
-        return this.annualInterestRate/12;
+        return this.balance * (this.annualInterestRate/12);
     }
 
-    public double withdraw(){
-        double withdraw = this.balance * getMonthlyInterestRate();
-        this.balance = this.balance - withdraw;
-        return withdraw;
+    public double withdraw(double money){
+        return money;
     }
 
     public double deposit(double deposit){
-        return (this.balance + deposit);
+        return deposit;
     }
 }
 
