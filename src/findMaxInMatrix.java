@@ -14,6 +14,7 @@ public class findMaxInMatrix {
     public static void enterData(Scanner scan,int[][] matrix,int Rows,int Cols){
         System.out.println("Enter Matrix Data");
         for(int i = 0;i < Rows; i++){
+            System.out.println("Row " + i);
             for (int j = 0; j < Cols; j++){
                 matrix[i][j] = scan.nextInt();
             }
