@@ -1,9 +1,9 @@
 package src.Fan;
 
 public class createFan {
-    private static final int LOW = 1;
-    private static final int MEDIUM = 2;
-    private static final int HIGH = 3;
+    private static int LOW = 1;
+    private static int MEDIUM = 2;
+    private static int HIGH = 3;
     private int speed;
     private boolean on;
     private double radius;
@@ -14,7 +14,6 @@ public class createFan {
         this.on = false;
         this.radius = 5.0;
         this.colour = "blue";
-
     }
     public void setSpeed(int speed){
         if(speed != 0){
