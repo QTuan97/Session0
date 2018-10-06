@@ -3,10 +3,10 @@ package src;
 import java.util.Scanner;
 
 public class totalOfDiagonal {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a size of your square matrix");
-        int n = sc.nextInt();
+        public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Enter a size of your square matrix");
+            int n = sc.nextInt();
         double[][] yourMatrix = createNewMatrix(n);
         enterData(sc,yourMatrix,n);
         System.out.println("Your sum is " + totalDiagonal(yourMatrix,n));
