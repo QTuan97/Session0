@@ -53,8 +53,8 @@ public class Rectangle extends Shape implements Resizeable {
 
     @Override
     public void resize(){
-        this.width = (this.width + this.width*(Math.random() * 99 + 1));
-        this.length = (this.length + this.length*(Math.random() * 99 + 1));
+        this.width = (this.width + this.width*(Math.random() * 99 + 1)/100);
+        this.length = (this.length + this.length*(Math.random() * 99 + 1)/100);
         System.out.println("A square has the length of width is " + this.width + ", the length of height is "
                 + this.length + ", the area is " + getArea() +
                 ", the perimeter is " + getPerimeter());

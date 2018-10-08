@@ -40,7 +40,7 @@ public class Circle extends Shape implements Resizeable{
 
     @Override
     public void resize(){
-       this.radius =  (this.radius + this.radius*(Math.random() * 99 + 1));
+       this.radius =  (this.radius + this.radius*(Math.random() * 99 + 1)/100);
        System.out.println("A circle has the radius " + this.radius + ", the area is " + getRadius()
        + ", the perimeter is " + getPerimeter());
 

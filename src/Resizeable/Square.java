@@ -40,7 +40,7 @@ public class Square extends Shape implements Resizeable{
 
     @Override
     public void resize(){
-        this.side = (this.side + this.side *(Math.random() * 99 + 1));
+        this.side = (this.side + this.side *(Math.random() * 99 + 1)/100);
         System.out.println("A square has the length of side is " + this.side + ", the area is " + getArea() +
                 ", the perimeter is " + getPerimeter());
     }
